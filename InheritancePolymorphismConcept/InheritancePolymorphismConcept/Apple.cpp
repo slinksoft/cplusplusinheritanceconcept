@@ -54,7 +54,6 @@ public:
 	void setPrice(double aPrice)
 	{
 		price = aPrice;
-		cout << "lol";
 	}
 };
 
