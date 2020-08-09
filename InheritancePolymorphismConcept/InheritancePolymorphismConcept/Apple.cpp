@@ -4,11 +4,11 @@ using namespace std;
 
 class Apple
 {
-public:
+protected:
 	string name;
 	string origin;
 	double price;
-
+public:
 	Apple() {
 		name = "Red Delicious";
 		origin = "Peru, Iowa, U.S.";
@@ -27,6 +27,31 @@ public:
 	void setName(string aName)
 	{
 		name = aName;
+	}
+	
+	void setOrigin(string aOrigin)
+	{
+		origin = aOrigin;
+	}
+
+	void setPrice(double aPrice)
+	{
+		price = aPrice;
+	}
+
+	string getName()
+	{
+		return name;
+	}
+
+	string getOrigin()
+	{
+		return origin;
+	}
+
+	double getPrice()
+	{
+		return price;
 	}
 
 };

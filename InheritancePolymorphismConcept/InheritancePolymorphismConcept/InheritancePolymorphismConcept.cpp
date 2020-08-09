@@ -13,11 +13,19 @@ int main()
 	Apple gala = Gala();
 	gala.toString();
 
-	PinkLady pl = PinkLady();
+	Apple pl = PinkLady();
 	pl.setPrice(4.99);
 	pl.toString();
 
 	GrannySmith gs = GrannySmith();
 	gs.setName("The Best Granny Smith");
+	cout << "Above method call should be overriding superclass method\n" << endl;
 	gs.toString();
+
+	gala.setPrice(5.99);
+	cout << "Above method call is called upon via superclass\n" << endl;
+	cout << "New Gala Info:" << endl;
+
+	gala.toString();
+
 }
